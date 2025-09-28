@@ -1,5 +1,4 @@
-# Firebase Studio
+CampusPath
 
-This is a NextJS starter in Firebase Studio.
+An intelligent platform designed to connect students, faculty, and employers, streamlining the campus placement process with AI-powered opportunity recommendations.
 
-To get started, take a look at src/app/page.tsx.
