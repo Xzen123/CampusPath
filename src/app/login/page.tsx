@@ -1,11 +1,14 @@
 'use client';
+
+import { Suspense } from 'react';
 import { LoginForm } from '@/components/auth/login-form';
 import { GraduationCap, CheckCircle } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import Link from 'next/link';
 
-export default function LoginPage() {
+// This component uses the hook and must be wrapped in a Suspense boundary.
+function LoginContent() {
   const searchParams = useSearchParams();
   const email = searchParams.get('email') || undefined;
   const signupSuccess = searchParams.get('success') === 'true';
@@ -40,5 +43,15 @@ export default function LoginPage() {
         </p>
       </div>
     </main>
+  );
+}
+
+// This is the main page export. It's a Client Component that provides the Suspense boundary.
+export default function LoginPage() {
+  return (
+    // You can add a fallback UI here, like a loading spinner.
+    <Suspense>
+      <LoginContent />
+    </Suspense>
   );
 }
