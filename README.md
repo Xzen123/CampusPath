@@ -62,7 +62,40 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🌐 Deployment
 
-This project is optimized for deployment on [Vercel](https://vercel.com/).
+This project is optimized for deployment on [Vercel](https://campuspath-ten.vercel.app/).
+
+---
+
+## 🔑 Mock User Accounts for Testing
+
+Since the application is currently not connected to a live database, you can use the following mock accounts for testing all features.
+
+### 🔒 Shared Password
+
+The password is the same for **all** accounts listed below.
+
+| Field | Value |
+| :--- | :--- |
+| **Password** | `password123` |
+
+---
+
+### 👥 Mock User Roles and Emails
+
+Use one of the email addresses listed under the desired role along with the shared password above.
+
+| Role | Email Examples | Access Level |
+| :--- | :--- | :--- |
+| **Student** | `student@example.com` | View job postings, apply for jobs. |
+| | `student@nitp.ac.in` | |
+| | `student@iitp.ac.in` | |
+| **Placement Cell** | `placement@example.com` | Manage students, employers, and job postings. |
+| | `placement@nitp.ac.in` | |
+| | `placement@iitp.ac.in` | |
+| **Faculty Mentor** | `faculty@example.com` | Approve student applications/mentorship tasks. |
+| **Employer** | `employer@example.com` | Post jobs and view applications. |
+
+---
 
 1.  **Push to GitHub:** Ensure your latest code is pushed to your GitHub repository.
 2.  **Import to Vercel:** Import the repository into Vercel. It will automatically detect the Next.js framework.
