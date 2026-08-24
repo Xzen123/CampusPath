@@ -76,3 +76,4 @@ Commit 74: Define Notification model  at 2026-07-07T16:50:24.502Z
 Commit 75: Add Next.js API route for user authentication  at 2026-09-11T03:46:49.343Z
 Commit 76: Implement login API route  at 2026-06-05T07:12:01.019Z
 Commit 77: Implement signup API route (fix) at 2026-08-02T03:55:09.432Z
+Commit 78: Add bcryptjs for password hashing  at 2026-08-24T17:41:01.588Z
