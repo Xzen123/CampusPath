@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "user-avatar-1",
+      "description": "Avatar for a student named Alex Doe",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkwMTExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "Avatar for a placement cell officer named Jane Smith",
+      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5MDExMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "Avatar for a faculty mentor",
+      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5MDExMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-4",
+      "description": "Avatar for an employer",
+      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkwMTExOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "company-logo-1",
+      "description": "Logo for a tech company",
+      "imageUrl": "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg5ODQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "company-logo-2",
+      "description": "Logo for a finance company",
+      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg5ODQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "company-logo-3",
+      "description": "Logo for a consulting firm",
+      "imageUrl": "https://images.unsplash.com/photo-1529612700005-e35377bf1415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg5ODQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "project-image-1",
+      "description": "Image for a web development project",
+      "imageUrl": "https://images.unsplash.com/photo-1617609277590-ec2d145ca13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzU5MDQ3NzI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "project-image-2",
+      "description": "Image for a data science project",
+      "imageUrl": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBkYXRhfGVufDB8fHx8MTc1ODk4MjcyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract data"
+    }
+  ]
+}
