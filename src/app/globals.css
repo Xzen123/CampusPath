@@ -8,13 +8,13 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%; /* Very light blue/gray background */
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 210 40% 50%;
+    --primary: 240 84% 54%; /* Vibrant indigo/blue */
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 210 40% 20%;
@@ -26,23 +26,23 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 210 40% 90%;
     --input: 210 40% 92%;
-    --ring: 210 40% 50%;
-    --chart-1: 210 40% 50%;
+    --ring: 240 84% 54%;
+    --chart-1: 240 84% 54%;
     --chart-2: 160 60% 45%;
     --chart-3: 340 80% 60%;
     --chart-4: 40 90% 55%;
     --chart-5: 280 70% 55%;
-    --radius: 0.5rem;
+    --radius: 1rem; /* Extremely rounded corners for all shadcn components */
   }
  
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 222 47% 4%; /* Deep dark blue */
     --foreground: 210 40% 98%;
-    --card: 240 10% 3.9%;
+    --card: 222 47% 8%;
     --card-foreground: 210 40% 98%;
-    --popover: 240 10% 3.9%;
+    --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 70%;
+    --primary: 240 84% 65%; /* Vibrant light indigo/blue */
     --primary-foreground: 210 40% 9.8%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -54,8 +54,8 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 210 40% 70%;
-    --chart-1: 210 40% 70%;
+    --ring: 240 84% 65%;
+    --chart-1: 240 84% 65%;
     --chart-2: 160 60% 55%;
     --chart-3: 340 80% 70%;
     --chart-4: 40 90% 65%;
@@ -64,7 +64,16 @@ body {
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-background via-background to-secondary/20 min-h-screen selection:bg-primary/20 selection:text-primary antialiased;
+  }
+
+  /* Universal transition for links and interactive elements */
+  a, button {
+    @apply transition-all duration-300;
   }
 }
