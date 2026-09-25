@@ -97,33 +97,45 @@ export default function LandingPage() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-20 md:py-28 lg:py-32 bg-muted/20">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl xl:text-7xl/none">
-                    The Smart Bridge for Every
-                  </h1>
-                   <Link href="/login" className="group">
-                        <div className="text-5xl sm:text-6xl xl:text-7xl/none font-bold text-destructive h-20 group-hover:underline">
-                        <span className="typing-effect">{displayedRole}</span>
-                        <span className="caret">|</span>
-                        </div>
-                    </Link>
-                  <p className="max-w-[700px] text-muted-foreground md:text-xl lg:text-2xl">
-                    Campus Path connects students with employers, streamlines
-                    placements, and empowers everyone in the campus recruitment
-                    ecosystem.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button asChild size="lg">
-                    <Link href="/dashboard">
-                      Get Started
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
-                </div>
+        <section className="relative w-full py-24 md:py-32 lg:py-40 overflow-hidden flex items-center justify-center min-h-[90vh]">
+          {/* Modern abstract background */}
+          <div className="absolute top-0 z-[-2] h-screen w-screen bg-background bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]"></div>
+          
+          <div className="container px-4 md:px-6 relative z-10">
+            <div className="flex flex-col items-center space-y-8 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
+              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm shadow-sm">
+                ✨ Powered by Google Genkit AI
+              </div>
+              
+              <div className="space-y-6 max-w-4xl mx-auto">
+                <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl xl:text-8xl/none bg-clip-text text-transparent bg-gradient-to-br from-foreground via-foreground to-muted-foreground drop-shadow-sm pb-2">
+                  The Smart Bridge for Every <br className="hidden sm:block" />
+                  <Link href="/login" className="inline-block mt-4 group">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-600 dark:from-primary dark:to-indigo-400 group-hover:opacity-80 transition-opacity">
+                      {displayedRole}
+                    </span>
+                    <span className="caret text-primary">|</span>
+                  </Link>
+                </h1>
+                
+                <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-2xl leading-relaxed">
+                  Campus Path connects students with top employers, streamlines placements, and empowers everyone in the modern recruitment ecosystem.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-4 min-[400px]:flex-row justify-center mt-8 w-full max-w-md mx-auto sm:max-w-none">
+                <Button asChild size="lg" className="h-14 px-8 text-lg rounded-full shadow-xl shadow-primary/25 hover:scale-105 transition-all group">
+                  <Link href="/dashboard">
+                    Get Started Free
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="h-14 px-8 text-lg rounded-full backdrop-blur-sm bg-background/50 hover:bg-muted/50 hover:scale-105 transition-all">
+                  <Link href="/about">
+                    How it works
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -157,15 +169,18 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {featureCards.map((feature) => (
-                    <Card key={feature.role} className="flex flex-col">
-                        <CardHeader className={`flex items-center justify-center p-6 ${feature.bgColor} rounded-t-lg`}>
-                            <feature.icon className={`h-12 w-12 ${feature.iconColor}`} />
+                    <Card key={feature.role} className="flex flex-col bg-background/40 backdrop-blur-xl border-border/50 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden group">
+                        <div className={`h-2 w-full ${feature.bgColor} transition-all duration-300 group-hover:h-3 opacity-50`} />
+                        <CardHeader className="flex items-center justify-center p-8 pb-4">
+                            <div className={`p-5 rounded-2xl ${feature.bgColor} shadow-inner group-hover:scale-110 transition-transform duration-500`}>
+                                <feature.icon className={`h-10 w-10 ${feature.iconColor}`} />
+                            </div>
                         </CardHeader>
-                        <CardContent className="p-6 flex-grow">
-                            <h3 className="text-xl font-bold mb-2">{feature.role}</h3>
-                            <p className="text-muted-foreground">{feature.description}</p>
+                        <CardContent className="p-6 pt-2 flex-grow text-center">
+                            <h3 className="text-xl font-bold mb-3">{feature.role}</h3>
+                            <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                         </CardContent>
                     </Card>
                 ))}
